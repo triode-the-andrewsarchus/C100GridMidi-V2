@@ -1,0 +1,26 @@
+# Build products and local analysis
+/.build/
+/.fitness/
+*.bin
+*.hex
+*.elf
+*.map
+
+# Personal banks, firmware readbacks and local settings
+/grid*.json
+/firmware-backups/
+.env
+.env.*
+!.env.example
+
+# Editor and OS files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Crash dumps (the core/ source directory remains tracked)
+/core.[0-9]*
