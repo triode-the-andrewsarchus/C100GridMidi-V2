@@ -33,7 +33,7 @@ make check SEQUENCE_CC=12
 make test-usb QMK_HOME=../qmk_firmware GRID_ROTATION=180
 ```
 
-The first three run in CI. Live ALSA integration skips when `/dev/snd/seq` is
+Run these checks locally. Live ALSA integration skips when `/dev/snd/seq` is
 unavailable; its successful local run received **352 incoming events** while
 sending **19 attacks with balanced releases** and **50 CC messages**. Hardware
 and USB descriptor builds require the pinned Keychron checkout and ARM toolchain.

@@ -25,6 +25,7 @@ from the repository root:
 ```sh
 make check
 make test-sanitize
+make check SEQUENCE_CC=12
 ```
 
 `make test-firmware` uses QMK fixtures to check key input, RGB, holds and storage
@@ -32,7 +33,7 @@ at all four rotations. The separate `make test-usb QMK_HOME=/path/to/qmk_firmwar
 target requires the pinned Keychron checkout and ARM toolchain; it builds real
 firmware and checks the actual descriptor resolver. Neither target flashes.
 
-CI runs host checks, sanitizers and an alternate sequence-CC configuration.
+Run host checks, sanitizers and the alternate sequence-CC configuration locally.
 Live ALSA integration returns a documented skip when `/dev/snd/seq` is absent;
 it should also be exercised locally with a working ALSA sequencer.
 
